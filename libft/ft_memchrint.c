@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 15:51:53 by jebossue          #+#    #+#             */
-/*   Updated: 2016/12/05 17:19:47 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/12/07 17:13:25 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ int	ft_memchrint(const void *s, int c, size_t n)
 			return (i);
 		++i;
 	}
-	return (0);
+	return (-1);
 }

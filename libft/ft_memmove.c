@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 11:51:18 by jebossue          #+#    #+#             */
-/*   Updated: 2016/11/22 14:09:49 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/12/07 15:55:48 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (dest <= src)
 	{
 		while (i < n)
-		{
+		{	
 			tmp_dest[i] = tmp_src[i];
 			i++;
 		}
