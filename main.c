@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 17:59:12 by jebossue          #+#    #+#             */
-/*   Updated: 2016/12/09 18:20:18 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/12/15 16:10:45 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ int	main(int argc, char **argv)
 	printf("line2: %s\n", line);
 	ft_get_next_line(fd, &line);
 	printf("line3: %s\n", line);*/
-	if (ft_get_next_line(fd, &line) != -1)
+	if (get_next_line(fd, &line) != -1)
 		printf("linemain: %s\n", line);
-	while (ft_get_next_line(fd, &line) == 1)
+	while (get_next_line(fd, &line) == 1)
 		printf("linemain: %s\n", line);
 	return (0);
 }

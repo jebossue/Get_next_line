@@ -6,7 +6,7 @@
 /*   By: jebossue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 19:21:36 by jebossue          #+#    #+#             */
-/*   Updated: 2016/12/13 15:48:21 by jebossue         ###   ########.fr       */
+/*   Updated: 2016/12/15 18:05:30 by jebossue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@
 
 typedef struct	s_struct
 {
-	int		index;	
-	char	buff[BUFF_SIZE];
 	int		ret;
+	char	buff[BUFF_SIZE];
+	int		slash;
+	int		i;
 }				t_struct;
 
-int	ft_get_next_line(const int fd, char **line);
+int	get_next_line(const int fd, char **line);
 
 #endif
